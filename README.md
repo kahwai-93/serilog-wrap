@@ -9,6 +9,6 @@ builder.Host.UseSerilog(SeriLogger.Configure);
 
 --- Code ---
 
-//Register Dependency
+//To use ISerilogWrapper
 builder.Services.AddSerilogWrapper();
 ```
