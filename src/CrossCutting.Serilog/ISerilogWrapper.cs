@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Common.Serilog
 {
-    interface ISerilogWrapper
+    public interface ISerilogWrapper
     {
         ILogger<SerilogWrapper> Logger { get; }
 
