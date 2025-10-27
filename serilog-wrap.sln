@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Serilog", "src\Cross
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Utilities", "src\CrossCutting.Utilities\Common.Utilities.csproj", "{938030A7-5095-43CF-AA3D-26180F2D223B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoCWebApp", "src\PoCWebApp\PoCWebApp.csproj", "{AA8228F6-3526-476F-9D21-711C0545CF3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{938030A7-5095-43CF-AA3D-26180F2D223B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938030A7-5095-43CF-AA3D-26180F2D223B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938030A7-5095-43CF-AA3D-26180F2D223B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8228F6-3526-476F-9D21-711C0545CF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8228F6-3526-476F-9D21-711C0545CF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8228F6-3526-476F-9D21-711C0545CF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8228F6-3526-476F-9D21-711C0545CF3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
