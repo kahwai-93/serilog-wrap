@@ -5,11 +5,11 @@ namespace PoCWebApp.Consumers
 {
     public record OrderCreated(Guid OrderId, string CustomerName, decimal Amount);
 
-    public class OrderCreatedConsumer : IConsumer<OrderCreatedIntegrationEvent>
+    public class OrderCreatedConsumer : IConsumer<OrderCreated>
     {
-        public Task Consume(ConsumeContext<OrderCreatedIntegrationEvent> context)
+        public Task Consume(ConsumeContext<OrderCreated> context)
         {
-            Task.Delay(2000);
+            //Thread.Sleep(5000);
             Console.WriteLine($"Order received: {context.Message.CustomerName} - RM{context.Message.Amount}");
             return Task.CompletedTask;
         }

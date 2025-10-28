@@ -23,13 +23,14 @@ namespace PoCWebApp.Applications.Commands
         {
             var order = Order.Create(request.CustomerName, request.Amount);
             _db.Orders.Add(order);
-            await _db.SaveChangesAsync(cancellationToken);
 
-            await _publishEndpoint.Publish(new OrderCreatedIntegrationEvent(
+            await _publishEndpoint.Publish(new OrderCreated(
                 order.Id,
                 order.CustomerName,
                 order.Amount
             ), cancellationToken);
+
+            await _db.SaveChangesAsync(cancellationToken);
 
             return order.Id;
         }
